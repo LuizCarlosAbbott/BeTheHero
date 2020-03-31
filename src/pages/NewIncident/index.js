@@ -32,7 +32,7 @@ export default function NewIncident() {
         }
       });
 
-      history.push("/profile");
+      history.push("/beTheHero/profile");
     } catch (err) {
       alert("Erro ao cadastrar caso, tente novamente.");
     }
@@ -50,7 +50,7 @@ export default function NewIncident() {
             isso.
           </p>
 
-          <Link className="back-link" to="/profile">
+          <Link className="back-link" to="/beTheHero/profile">
             <FiArrowLeft size={16} color="#e02141" />
             Voltar para home
           </Link>

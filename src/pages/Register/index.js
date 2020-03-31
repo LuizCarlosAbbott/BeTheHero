@@ -25,7 +25,7 @@ export default function Register() {
 
       alert(`Seu Id de acesso: ${response.data.id}`);
 
-      history.push("/");
+      history.push("/beTheHero/beTheHero/");
     } catch (err) {
       alert("Erro no cadastro, tente novamente");
     }
@@ -43,7 +43,7 @@ export default function Register() {
             os casos da sua ONG.
           </p>
 
-          <Link className="back-link" to="/">
+          <Link className="back-link" to="/beTheHero/">
             <FiArrowLeft size={16} color="#e02141" />
             Tenho cadastro
           </Link>

@@ -21,10 +21,10 @@ export default function Logon() {
 
       localStorage.setItem("ongId", id);
       localStorage.setItem("ongName", response.data.name);
-      history.push("/profile");
+      history.push("/beTheHero/profile");
     } catch (err) {
       // alert("Falha no login, tente novamente.");
-      history.push("/profile");
+      history.push("/beTheHero/profile");
     }
   }
 
@@ -44,7 +44,7 @@ export default function Logon() {
             Entrar
           </button>
 
-          <Link className="back-link" to="/register">
+          <Link className="back-link" to="/beTheHero/register">
             <FiLogIn size={16} color="#e02141" />
             Não Tenho cadastro
           </Link>
